@@ -1,6 +1,13 @@
 #Code for calander
 year=int(input("Enter name of year: "))
-month_name = input("Enter the name of month: ").upper()
+month = input("Enter the name of month: ").upper()
+#check month name
+month_check = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER']
+if month in month_check:
+    month_name = month
+else:
+    print("You made a spelling mistake in Month name.Try again.")
+    quit()
 num_blank = int(input("Number of blank Space in Start: "))
 print()
 
